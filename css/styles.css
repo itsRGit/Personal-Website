@@ -12,9 +12,12 @@ body {
 
 h1 {
     font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-style: italic;
     color: #11999E;
     font-size: 5.625rem; /* 16px = 100% = 1em -> 90px/16=562.5% ("rem"=root em) */
     margin: 50px auto 20px auto;
+    
 }
 
 h2 {
@@ -115,6 +118,23 @@ a:hover {
     text-align: left;
 }
 
+.projects-title {
+    color: #11999E;
+    margin: 0 auto 5rem;
+}
+
+.projects-link {
+    color: #66BFBF;
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    
+}
+
+.projects-link:hover {
+    color: #40514E;
+    
+}
+
 .footer-link {
     color: #11999E;
 }
@@ -147,6 +167,67 @@ a:hover {
     height: auto;
     float: right;
     margin-left: 30px;
+}
+
+.proj-pic {
+    width: 20rem
+}
+
+.proj-title {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.proj-link {
+    box-shadow: inset 0 0 0 0 #d6f0f0;
+    color: #d6f0f0;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.proj-link:hover {
+    box-shadow: inset 200px 0 0 0 #11999e;
+    color: white;
+}
+
+.project-scroller {
+    /* for padding, gap and space btw img and title, etc */
+    --_spacer: 1rem; 
+    display: grid;
+    gap: var(--_spacer);
+    grid-auto-flow: column;
+    grid-auto-columns: 21%;
+
+    padding: 0 var(--_spacer) var(--_spacer);
+
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+
+.proj-element {
+    display: grid;
+    grid-template-rows: min-content;
+    gap: var(--_spacer);
+    padding: var(--_spacer);
+    background: #66BFBF;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.proj-element > img {
+    inline-size: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.snaps-inline {
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: var(--_spacer, 1rem);
+}
+
+.snaps-inline > * {
+    scroll-snap-align: start;
 }
 
 .btn {
