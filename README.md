@@ -21,7 +21,7 @@ This website serves as a digital portfolio to present my work, skills, and profe
 
 ## 🌍 View the Website
 
-You can view the live website here: [Portfolio Site](https://itsrgit.github.io/Portfolio-SIte/)
+You can view the live website here: [Portfolio Site](https://itsrgit.github.io/Personal-Website/)
 
 ## 🤝 How to Contribute
 
